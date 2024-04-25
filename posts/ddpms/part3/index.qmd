@@ -307,7 +307,7 @@ $$
 
 If eq.*(4)* is intractable, then how do we frame our objective function? 
 
-If you have worked with other types of generative models before, then you might have seen something like equation eq.*(4)* in other types of generative models. But where? The answer is **Variational AutoEncoder**(VAE for short). Let's consider a single step of denoising. We assume a noisy image to be our latent, and once we have our latent variable we try and generate a less noisy image. Both the latent variable (more noisy image) and the generated image (less noisy image) come from a distribution. If we draw an analogy of this step to a VAE we can apply all the math onto each reverse diffusion process steps.
+If you have worked with other types of generative models before, then you might have seen something like equation eq.*(4)* in other types of generative models. But where? The answer is **Variational AutoEncoder**(VAE for short). If we treat $x_{0}$ as **observed variable** and $x_{1:T}$ as **latent variables**, then we have a setup similar to a VAE.
 
 Similarities:
 
